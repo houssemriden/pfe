@@ -4,7 +4,7 @@ RUN apk add --no-cache py3-pip \
 
 WORKDIR /app
 COPY . /app
-RUN pip freeze > requirements.txt
+
 RUN pip3 install flask 
 RUN pip3 --no-cache-dir install -r requirements.txt
 
